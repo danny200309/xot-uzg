@@ -1,0 +1,11 @@
+#summary Installation of XOT Framework & Channels
+
+= Installation =
+
+The installation of the XOT Framework is very straightforward. Please follow these steps to make sure the installation done correct:
+
+  # Backup your previous version of the XOT Framework
+  # Delete all SubFolders in the XOT Framework Folder *except* the channels
+  # Copy the new content in to the XOT Framework Folder
+
+That is all and should do the trick
