@@ -2,6 +2,11 @@
 
 = Installation =
 
+== Requirements ==
+XOT Uzg needs at least a R8683 buid of XBMC and a version of the Python Image Library (PIL) on your XBox.
+
+== Installing ==
+
 The installation of the XOT Framework is very straightforward. Please follow these steps to make sure the installation done correct:
 
   # Backup your previous version of the XOT Framework
@@ -10,7 +15,7 @@ The installation of the XOT Framework is very straightforward. Please follow the
 
 That is all and should do the trick
 
-== Pre Installation ==
+== Post Installation ==
 
 Some channels need additional configuration. In the Uitzendinggemist XOT for instance, the Talpa channel needs an password/username. These can be changed in the the \channels\talpa\chn_talpa.py file. Look for this part in the top of the code
 {{{
