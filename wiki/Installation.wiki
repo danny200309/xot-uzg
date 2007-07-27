@@ -9,3 +9,14 @@ The installation of the XOT Framework is very straightforward. Please follow the
   # Copy the new content in to the XOT Framework Folder
 
 That is all and should do the trick
+
+== Pre Installation ==
+
+Some channels need additional configuration. In the Uitzendinggemist XOT for instance, the Talpa channel needs an password/username. These can be changed in the the \channels\talpa\chn_talpa.py file. Look for this part in the top of the code
+{{{
+# ONLY EDIT THESE TWO VARIABLES !!!!!!! ##############################
+PASSWORD='Password'
+USERNAME='Username'
+######################################################################
+}}}
+Here you must change the Password and Username for the Talpa/Tien channel.
