@@ -17,3 +17,5 @@ If these checks turn out OK, you can assume the problem is XOT Uzg. Please do th
   # Retrieve both the uzg.log and uzg.old.log file from the XOT Uzg folder on your XBox. See if there are some errors in there that could help you a bit further. 
   # If no errors are there, check the xbmc.log and/or xbmc.old.log for error related to XOT Uzg.
   # If the there are errors present and they are code related, please submit an Issue on this page and attach the logfiles to the post.
+ 
+ Furthermore, if an issue was introduced in a new version, please check the changelog for any changes that could have lead to this issue.
