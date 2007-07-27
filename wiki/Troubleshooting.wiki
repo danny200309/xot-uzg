@@ -1,0 +1,14 @@
+#summary Troubleshooting XOT Uzg on XBMC
+
+= TroubleShooting =
+
+Before mailing or posting issues with XOT Uzg please follow these steps FIRST:
+
+  # Check if your Internet Connection is up and running (don't chase it :D );
+  # Check if the website of the TV Channel you are trying to access is online;
+  # Check if you can playback videos from within their own site;
+  # Check XBMC for connectivity (did it get an IP adres and can you for instance do an imdb, cddb or weather lookup?
+
+If these checks turn out OK, you can assume the problem is XOT Uzg. Please do the following:
+
+_Under Construction_
