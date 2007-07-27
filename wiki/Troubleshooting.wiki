@@ -2,13 +2,18 @@
 
 = TroubleShooting =
 
+_Just a small not about XOT Uzg: it parses websites and websites can go down or change their layout! So before blaming the script, please make sure that the websites you are browsing with the script are online!_
+
 Before mailing or posting issues with XOT Uzg please follow these steps FIRST:
 
   # Check if your Internet Connection is up and running (don't chase it :D );
   # Check if the website of the TV Channel you are trying to access is online;
   # Check if you can playback videos from within their own site;
   # Check XBMC for connectivity (did it get an IP adres and can you for instance do an imdb, cddb or weather lookup?
+  # Did you delete all files of XOT Uzg before updating to a newer version? 
 
 If these checks turn out OK, you can assume the problem is XOT Uzg. Please do the following:
 
-_Under Construction_
+  # Retrieve both the uzg.log and uzg.old.log file from the XOT Uzg folder on your XBox. See if there are some errors in there that could help you a bit further. 
+  # If no errors are there, check the xbmc.log and/or xbmc.old.log for error related to XOT Uzg.
+  # If the there are errors present and they are code related, please submit an Issue on this page and attach the logfiles to the post.
