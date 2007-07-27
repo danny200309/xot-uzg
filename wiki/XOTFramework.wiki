@@ -1,4 +1,5 @@
 #summary So you want to use the XOT Framework for your own Online TV script?
+#labels Featured
 
 = XOT Framework =
 _So, you want to use the XOT Framework for your own Online TV Script?_
@@ -71,7 +72,6 @@ The main framework is based on a small number of files. These files are very dep
 || chn_class.py|| Base class on which all channel scripts are bases. See [chn_class] page for more information||
 
 To Be Continued.....
-
 
 
 
