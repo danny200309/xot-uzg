@@ -9,5 +9,73 @@ This can be done and is not too difficult. This small tutorial will give an intr
   # XOT Framework Configuration Files
   # XOT [ChannelLayout Channel Layout]
   # and finally the XOT [Skinning Skinning Layout]
+
   
-   
+== XOT Framework FolderLayout ==
+The XOT Framework has a very specific folderlayout that should be be kept intact:
+{{{
+ XOTFramework
+  + Cache
+  |
+  + Channels
+  |    |
+  |    + Channel1
+  |    |    + chn_channel1.py
+  |    |    + channel1icon.png
+  |    |    + channel1largeicon.png
+  |    |    + channel1background.png
+  |    |    + channel1background16x9.png
+  |    |   
+  |    + Channel2
+  |    |  
+  |    + Channel3
+  |    |  
+  |    + Etc, Etc, Etc......
+  |
+  + Libs
+  |    + chn_class.py
+  |    + common.py    
+  |    + config.py
+  |    + contextmenu.py
+  |    + controls.py
+  |    + logger.py
+  |    + progwindow.py
+  |    + update.py
+  |    + uriopener.py 
+  | 
+  + Skins
+  |    + Default
+  |    |    + Media
+  |    |    + PAL
+  |    |    + PAL16x9 
+  |    |    
+  |    + Skin2
+  |    |    + Media
+  |    |    + PAL
+  |    |    + PAL16x9 
+  |    |    
+  + default.py
+  + default.tbn
+  + readme.txt
+  + logfile.log
+  + logfile.old.log
+}}}
+== Framwork Files ==
+The main framework is based on a small number of files. These files are very dependent on eachoter and *should not be modified*:
+
+|| *Filename* || *Description* ||
+|| Default.py || Default python script that load all other modules and starts the logger and download handler||
+|| Default.tbn || Button icon for XBMC. Just an renamed .PNG file (Can be changed)||
+|| Readme.txt || Name says it all||
+|| Logfile.(old.)log|| The two logfiles that are being kept. Logfile.log is the most recent one. Logfile.old.log the one from the previous runs||
+|| chn_class.py|| Base class on which all channel scripts are bases. See [chn_class] page for more information||
+
+To Be Continued.....
+
+
+
+
+
+
+
+
