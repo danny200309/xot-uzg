@@ -1,4 +1,5 @@
 #summary Troubleshooting XOT Uzg on XBMC
+#labels Featured
 
 = TroubleShooting =
 
