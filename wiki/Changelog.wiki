@@ -1,4 +1,5 @@
 #summary Changelog for XOT Uzg
+#labels Featured
 = Changelog =
 
 ==Changelog v2.7.0b2 2007-07-14 (Requires at least XBMC R8683)==
@@ -95,4 +96,3 @@
   * Added: new background
   * Changed: layout
   * Fixed: display most recent programms, instead of the first in alphabetical ranking
-
