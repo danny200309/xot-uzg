@@ -1,4 +1,98 @@
 #summary Changelog for XOT Uzg
 = Changelog =
 
-Add your content here.
+==Changelog v2.7.0b2 2007-07-14 (Requires at least XBMC R8683)==
+  * Removed: Some unneccessary imports
+  * Added: UZG Logger class, not based on Python logging
+  * Added: option to log exceptions in both UZG and XBMC log
+  * Added: GUID for identification of cListItems
+  * Added: Uriopener checks if filenames are in correct xfat format now
+  * Fixed: Some bugs in Uriopener
+  * Changed: Joox regex
+  * Added: .flv detection to SBS6/PCZapper script
+
+==Changelog v2.7.0b1 2007-07-02 (Requires at least XBMC R8683)==
+  * Added: registration of all channels in their own chn_name.py
+  * Removed: PMIII skin. Now defaults to Default
+  * Added: SBS6 support (from pczapper.tv)
+  * Added: Progressbar information while opening
+  * Added: complete contextmenu support (used AMT for inspiration but changed a lot). Menu is triggered by the Info Key/Button
+  * Changed: renamed skin xml files to uzg-windowname.xml ("uzg-" added)
+  * Added: ClearityMod skin
+  * Fixed: MC360 skin
+  * Added: config.py with all config stuff
+  * Added: controls.py with all control and window ID's
+  * Changed: Joox download enabled. Defaults to Cache Dir and uses item name as filename.
+  * Changed: moved first load of www.uitzendinggemist.nl from default.py to chn_nos.py and added cookie check to chn_nos.py.
+  * Fixed: integer instead of float value to progressbar dialog (float is decrepated)
+  * Fixed: Minor bug playing KK streams
+  * Changed: logging now happens in the 'uzg.log' file in the script folder of UZG. The logfile from the previous session is named 'uzg.old.log'.
+  * Added: MultiLine Logger Class with Exception Handling
+  * Changed: NOS Search now accepts multiple characters.
+
+==Changelog v2.6.x 2007-06-20 (Requires at least XBMC R8683)==
+  * Added: Joox Support
+  * Added: Version Checking
+  * Changed: UriOpener now has False as default. Only True on data retrieval
+  * Fixed: Skin list scrolling
+  * Fixed: uriopener did not open file if filesize was smaller than chucksize
+  * Changed: cleanup of uriopen method. Also adding more debuginfo
+  * Changed: ListItem methodes to comply with XBMC R9198
+  * Fixed: wrong tag in skin XML-Files
+  * Fixed: re-initialisation of episode window after video playback
+  * Fixed: MC360 skin
+  * Changed: New Skinlayout, first draft
+  * Fixed: Initialisation of Talpa-window continued even when login failed.
+  * Added: The "Concept" skin.
+  * Fixed: Errors due to very large amounts of URL's queueing up when scrolling an episode list fast.
+  * Added: Talpa.tv Uitzendinggemist Support(READ 4.a below)
+
+==Changelog v2.5.x 2007-05-16 (Requires WindowXML compatible XBMC)==
+  * Fixed: Problem with image-links in Default skin. Prevented correct display of images when the default skin was selected.
+  * Added: PMIII skin.
+  * Fixed: RTL 4,5&7 streams were not working due to server changes at RTL.
+  * Fixed: Pixel column at left side of button removed.
+  * Added: initial MC360 skin support (Still needs testing)
+  * Changed: More NOS Uitzendinggemist history. All episodes present on the site should now be visible.
+  * Fixed: cleaning of URL with &amp; insided the url.
+  * Added: common.py has ID's for the used controls defined in channelwindow.xml.
+  * Added: windowxml skinning support (See further down for more notes).
+  * Changed: icons for channels/episodes
+  * Changed: more robust checking for streams in Kanalenkiezer. Html is now filtered out before playback (had to check HTTP first) to prevent problems with mplayer.
+  * Changed: location of constants changed to the channel-libary files.
+  * Changed: all constants in CAPITALS, variable in camelCase and methodes in PascalCase
+
+==Changelog v2.4.x 2007-04-24==
+  * Changed: to make things a bit more easy to maintain I changed from a single default.py to multiple files.
+  * Added: seperate python scripts for libraries (libs), channels and a default.py.
+  * Changed: each channel has it's own python file with instructions.
+  * Fixed: on some systems the Cache dir was not present which prevented the script from running! Checking this now on startup.
+  * Added: BETA support for www.kanalenkiezer.nl
+  * Changed: search algorithm for www.uitzendinggemist.nl
+
+==Changelog v2.3.x 2007-04-09==
+  * Fixed: lookup string was wrong due to missing Q, X and Y.
+  * Fixed: no episodes were displayed if no date was found for episodes.
+  * Added: Searching for NED1,2&3. Only one symbol can be used to search. Others will be neglected.
+
+==Changelog v2.2.x 2007-04-09==
+  * Added: Progressbar support while loading an URL
+
+==Changelog v2.1.x 2007-04-03==
+  * Fixed: scaling bug when using HD resolutions
+  * Added: parsing of ASX/ASF for compatibility with older XBMC versions
+  * Added: first support for RTL 4,5 & 7 (please use the XBMC forum link to let me know if there are bugs)
+  * Added: icons for folders/video-files
+
+==Changelog v2.0.x 2007-03-30==
+  * Added: animations
+  * Changed: tabs instead of spaces for indentation
+  * Added: readme.txt
+  * Fixed: now again working with www.uitzendinggemist.nl
+  * Fixed: working ASF streams
+  * Added: support for multiple episodes of a programm
+  * Changed: split window-class into to parts: program-window and episode-window
+  * Added: new background
+  * Changed: layout
+  * Fixed: display most recent programms, instead of the first in alphabetical ranking
+
