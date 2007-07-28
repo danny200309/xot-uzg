@@ -4,13 +4,13 @@
 = XOT Framework =
 _So, you want to use the XOT Framework for your own Online TV Script?_
 
-This can be done and is not too difficult. This small tutorial will give an introduction into the XOT Framework. Bare in mind that the XOT Framework consists of the Framework and channels. This page contains the XOT Framework configuration. The [ChannelLayout] page deals with the creation and configuration of the individual channels.
+This can be done and is not too difficult. This small tutorial will give an introduction into the XOT Framework. Bare in mind that the XOT Framework consists of the Framework and channels. This page contains the XOT Framework configuration. The [ChannelScript] page deals with the creation and configuration of the individual channels.
 
 This WIKI page will contain the following items:
   # XOT Framework FolderLayout
   # XOT Framework Files
   # XOT Framework Configuration Files
-  # XOT [ChannelLayout Channel Layout]
+  # XOT Framework Channel Layout
   # and finally the XOT [Skinning Skinning Layout]
   
 == XOT Framework FolderLayout ==
@@ -116,11 +116,12 @@ Most of the items self explaining. But here are the highlights (remember: python
 || version|| Current version||
 || updateUrl || Url which is contacted for the update check. This url will be called with the currentVersion value and expects '0' if no updates are available or a version number if a version is available||
 
+== ChannelLayout ==
+A channel consists of a folder named after the channel, a channel script, an small icon, a largeicon and perhaps some background image. The names of the channelfolder and channelscript are linked: if the folder is called 'abc' the script should be named 'chn_abc.py', if the folder is called 'sbs6' the script should be named 'chn_sbs6.py'. The icons files can be given any name, so can the background images.
 
+More configuration options for the channels can be found on the [ChannelScript] Wiki Page.
 
 To Be Continued.....
-
-
 
 
 
