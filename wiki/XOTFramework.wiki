@@ -4,13 +4,14 @@
 = XOT Framework =
 _So, you want to use the XOT Framework for your own Online TV Script?_
 
-This can be done and is not too difficult. This small tutorial will give an introduction into the XOT Framework. This WIKI page will contain the following items:
+This can be done and is not too difficult. This small tutorial will give an introduction into the XOT Framework. Bare in mind that the XOT Framework consists of the Framework and channels. This page contains the XOT Framework configuration. The [ChannelLayout] page deals with the creation and configuration of the individual channels.
+
+This WIKI page will contain the following items:
   # XOT Framework FolderLayout
   # XOT Framework Files
   # XOT Framework Configuration Files
   # XOT [ChannelLayout Channel Layout]
   # and finally the XOT [Skinning Skinning Layout]
-
   
 == XOT Framework FolderLayout ==
 The XOT Framework has a very specific folderlayout that should be be kept intact:
@@ -91,6 +92,8 @@ if rootDir[-1]!='\\': rootDir=rootDir+'\\'
 
 cacheDir = os.path.join(rootDir,'cache')
 if cacheDir[-1]!='\\': cacheDir=cacheDir+'\\'
+
+skinFolder = "" #get's set from default.py
 }}}
 The second part is the real configuration part:
 {{{
@@ -104,11 +107,19 @@ logFileName = "uzg.log"
 
 version = "2.7.0b3"
 updateUrl = "http://www.rieter.net/uitzendinggemist/index.php?currentversion="
-
-skinFolder = "" #get's set from default.py
 }}}
 
+Most of the items self explaining. But here are the highlights (remember: python is *capital sensitive* so don't change them):
+|| logLevel|| Minimum level that gets logged. Choices are logging.DEBUG, logging.INFO, logging.ERROR, logging.CRITICAL||
+|| logDual|| Log exceptions both in the XOT log and the XBMC log||
+|| logFilename|| Duh!||
+|| version|| Current version||
+|| updateUrl || Url which is contacted for the update check. This url will be called with the currentVersion value and expects '0' if no updates are available or a version number if a version is available||
+
+
+
 To Be Continued.....
+
 
 
 
