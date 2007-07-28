@@ -65,13 +65,52 @@ The XOT Framework has a very specific folderlayout that should be be kept intact
 The main framework is based on a small number of files. These files are very dependent on eachoter and *should not be modified*:
 
 || *Filename* || *Description* ||
-|| Default.py || Default python script that load all other modules and starts the logger and download handler||
-|| Default.tbn || Button icon for XBMC. Just an renamed .PNG file (Can be changed)||
-|| Readme.txt || Name says it all||
-|| Logfile.(old.)log|| The two logfiles that are being kept. Logfile.log is the most recent one. Logfile.old.log the one from the previous runs||
+|| default.py || Default python script that load all other modules and starts the logger and download handler||
+|| default.tbn || Button icon for XBMC. Just an renamed .PNG file (Can be changed)||
+|| readme.txt || Name says it all||
+|| logfile.(old.)log|| The two logfiles that are being kept. Logfile.log is the most recent one. Logfile.old.log the one from the previous runs||
 || chn_class.py|| Base class on which all channel scripts are bases. See [chn_class] page for more information||
+|| common.py|| Library with some common objects||
+|| contextmenu.py|| The name says it all||
+|| controls.py || Just constants for mapping to default XBMC actions and Skin objects||
+|| logger.py || Custom Logging for XOT||
+|| progwindow.py || Main XOT window ||
+|| update.py || Update checker ||
+|| uriopener.py || Download handler ||
+
+So what files can you change? Well, there is only one obvious one left: config.py. 
+
+== Configuring your XOT ==
+
+The main configuration is done via the _config.py_ file. Consists of two parts. The first part should not be changed:
+{{{
+import os, logging
+
+rootDir = os.getcwd().replace(";","")
+if rootDir[-1]!='\\': rootDir=rootDir+'\\'
+
+cacheDir = os.path.join(rootDir,'cache')
+if cacheDir[-1]!='\\': cacheDir=cacheDir+'\\'
+}}}
+The second part is the real configuration part:
+{{{
+appName = "Uitzendinggemist.v2"
+appSkin = "uzg-progwindow.xml"
+contextMenuSkin = "uzg-contextmenu.xml"
+
+logLevel = logging.DEBUG
+logDual = True
+logFileName = "uzg.log"
+
+version = "2.7.0b3"
+updateUrl = "http://www.rieter.net/uitzendinggemist/index.php?currentversion="
+
+skinFolder = "" #get's set from default.py
+}}}
 
 To Be Continued.....
+
+
 
 
 
