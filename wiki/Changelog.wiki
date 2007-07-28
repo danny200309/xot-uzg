@@ -2,6 +2,33 @@
 #labels Featured
 = Changelog =
 
+==Changelog v2.7.0b3 2007-07-28 (Requires at least XBMC R8683)==
+
+  * Added: Code.google.com page: http://code.google.com/p/xot-uzg/
+  * Changed: Uitzendinggemist.v2 will be called XOT:Uzg (XBMC Online TV: Uitzendinggemst)
+  * Changed: UZG is now based on seperate framework called: XOT (XBMC Online TV)
+  * Added: Custom sorting of channels using SortOrder property
+  * Changed: Chn_class.py is now completely UZG free
+  * Changed: Media files that do not explicitly belong to UZG are renamed from uzg_ to xot_
+  * Changed: Progwindow Skin
+  * Fixed: Visibility on Panel now works
+  * Added: Checking if image is present in SkinFolder. If it is present, that one is used, else the file in the channel folder is used
+  * Changed: Media of channels now in channelfolder OR in skinfolder. The latter overwrites the former (skinfolder is the most important location).
+  * Changed: Each channel has its own folder now: chn_name.py has to be located \name\chn_name.py
+  * Changed: Moved chn_class to libs.
+  * Added: New skin for progwindow
+  * Added: Control groups for up/down and exit/back
+  * Changed: Graphics for channels
+  * Added: Possibility to have both a list of channels and buttons. Nr of buttons must be equal to number of channels
+  * Changed: Register items to 'channelSelect -> channelRegister'
+  * Changed: buttons are now registered from within the channelClass
+  * Added: Dynamically load channels
+  * Changed: Contextmenu and progwindow skin-name in config.sys
+  * Changed: More UZG-name related stuff into the config.py
+  * Added: appName to config.py
+  * Changed: UpdateUrl now in config.py
+  * Changed: UzgLog to logFile (for general purpose)
+  
 ==Changelog v2.7.0b2 2007-07-14 (Requires at least XBMC R8683)==
   * Removed: Some unneccessary imports
   * Added: UZG Logger class, not based on Python logging
