@@ -11,7 +11,7 @@ This WIKI page will contain the following items:
   # XOT Framework Files
   # XOT Framework Configuration Files
   # XOT Framework Channel Layout
-  # and finally the XOT [Skinning Skinning Layout]
+  # and finally the XOT Skinning Layout
   
 == XOT Framework FolderLayout ==
 The XOT Framework has a very specific folderlayout that should be be kept intact:
@@ -121,7 +121,29 @@ A channel consists of a folder named after the channel, a channel script, an sma
 
 More configuration options for the channels can be found on the [ChannelScript] Wiki Page.
 
+
+== Skinning ==
+The XOT Framework uses the [http://www.xboxmediacenter.com/wiki/index.php?title=WindowXML WindowXML] features of XBMC. There are two main windows: the main program window (progwindow.xml) and the episode window (episodewindow.xml). Each window can be modified but some controls are required and thus cannot be removed. For more info on this, see the [Skinning] page.
+
+XOT Supports multiple skins which should all be placed in the _skins_ folder. Each skin folder should have the same name as their corresponding XBMC skin name. 
+
+How the XOT Framework determines which *.XML* files to use:
+  # Find the name of the currently used XBMC skin _<skinfolder>_
+  # Look for the file in the _XBMC\skin\<skinfolder>_
+  # Then look for that file in the _\skins\<skinfolder>_ folder of XOT
+  # If it is found, that folder is used, else _Default_ is used
+
+For the Icons, LargeIcons and Backgrounds of the channels, the XOT Frameworks looks up the location a bit different. How the XOT Framework determines which *.PNG* file to use:
+  # Look for the image in the XOT _\skins\<skinfolder>\Media_ folder
+  # Look for the image in the XOT _\channels\<channelname>\_ folder
+
+So basically, the the Icons, LargeIcons and Backgrounds should be only specified in the _\channels\<channelname>\_ folder, however, if a skin wants to override them, then can be placing the same named file in the _\skins\<skinfolder>\Media_ folder.
+
 To Be Continued.....
+
+
+
+
 
 
 
