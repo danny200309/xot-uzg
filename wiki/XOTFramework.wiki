@@ -7,11 +7,11 @@ _So, you want to use the XOT Framework for your own Online TV Script?_
 This can be done and is not too difficult. This small tutorial will give an introduction into the XOT Framework. Bare in mind that the XOT Framework consists of the Framework and channels. This page contains the XOT Framework configuration. The [ChannelScript] page deals with the creation and configuration of the individual channels.
 
 This WIKI page will contain the following items:
-  # XOT Framework FolderLayout
+  # XOT Framework Folder and files Layout
   # XOT Framework Files
   # XOT Framework Configuration Files
-  # XOT Framework Channel Layout
-  # and finally the XOT Skinning Layout
+  # XOT Framework Channel files
+  # and finally the XOT Skinning files
   
 == XOT Framework FolderLayout ==
 The XOT Framework has a very specific folderlayout that should be be kept intact:
@@ -142,7 +142,6 @@ For the Icons, LargeIcons and Backgrounds of the channels, the XOT Frameworks lo
 So basically, the the Icons, LargeIcons and Backgrounds should be only specified in the _\channels\<channelname>\_ folder, however, if a skin wants to override them, then can be placing the same named file in the _\skins\<skinfolder>\Media_ folder.
 
 To Be Continued.....
-
 
 
 
