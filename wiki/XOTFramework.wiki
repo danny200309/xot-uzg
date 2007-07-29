@@ -141,9 +141,6 @@ For the Icons, LargeIcons and Backgrounds of the channels, the XOT Frameworks lo
 
 So basically, the the Icons, LargeIcons and Backgrounds should be only specified in the _\channels\<channelname>\_ folder, however, if a skin wants to override them, then can be placing the same named file in the _\skins\<skinfolder>\Media_ folder.
 
-To Be Continued.....
-
-
 
 
 
