@@ -123,7 +123,9 @@ More configuration options for the channels can be found on the [ChannelScript] 
 
 
 == Skinning ==
-The XOT Framework uses the [http://www.xboxmediacenter.com/wiki/index.php?title=WindowXML WindowXML] features of XBMC. There are two main windows: the main program window (progwindow.xml) and the episode window (episodewindow.xml). Each window can be modified but some controls are required and thus cannot be removed. For more info on this, see the [Skinning] page.
+The XOT Framework uses the [http://www.xboxmediacenter.com/wiki/index.php?title=WindowXML WindowXML] features of XBMC. There are two main windows: the main program window (progwindow.xml) and the episode window (episodewindow.xml). Each window can be modified but some controls are required and thus cannot be removed. For more info on this, see the [Skinning] page. 
+
+Because XOT uses the WindowXML framework, it also supports different skinfiles for different resolutions. More on that you can find on the [http://www.xboxmediacenter.com/wiki/index.php?title=WindowXML XBMC WindowXML] page.
 
 XOT Supports multiple skins which should all be placed in the _skins_ folder. Each skin folder should have the same name as their corresponding XBMC skin name. 
 
@@ -140,7 +142,6 @@ For the Icons, LargeIcons and Backgrounds of the channels, the XOT Frameworks lo
 So basically, the the Icons, LargeIcons and Backgrounds should be only specified in the _\channels\<channelname>\_ folder, however, if a skin wants to override them, then can be placing the same named file in the _\skins\<skinfolder>\Media_ folder.
 
 To Be Continued.....
-
 
 
 
