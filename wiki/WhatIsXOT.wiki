@@ -11,7 +11,7 @@ I stripped the complete script and created separate libraries for url-handling, 
 
 
 This framework can be used a couple of different ways:
-  # Creating your own [ChannelScript channels] and adding them to my XOT-UZG script (the former Uitzendinggemist.v2). You will get stuck with my userinterface and my configuration. 
-  # Create your own script by using the XOT and [XOTFramework customizing] the configuration and skins.
+  * Creating your own [ChannelScript channels] and adding them to my XOT-UZG script (the former Uitzendinggemist.v2). You will get stuck with my userinterface and my configuration. 
+  * Create your own script by using the XOT and [XOTFramework customizing] the configuration and skins.
 
 to be continued...
