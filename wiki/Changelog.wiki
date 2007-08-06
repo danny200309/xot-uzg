@@ -2,7 +2,7 @@
 #labels Featured
 = Changelog =
   
-== Changelog v2.7.0b4 - 2007-07-27 (Needs at least XBMC revision R8683) ==
+== Changelog v2.7.0b4 - 2007-08-06 (Needs at least XBMC revision R8683) ==
   * Fixed: <string> error in XBMC log due to XOT logger
   * Added: Print directory of script on startup for debugging options
   * Fixed: KK channels where out of sync due to webpage layout!
