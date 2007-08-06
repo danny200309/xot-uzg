@@ -2,6 +2,22 @@
 #labels Featured
 = Changelog =
   
+== Changelog v2.7.0b4 - 2007-07-27 (Needs at least XBMC revision R8683) ==
+  * Fixed: <string> error in XBMC log due to XOT logger
+  * Added: Print directory of script on startup for debugging options
+  * Fixed: KK channels where out of sync due to webpage layout!
+  * Added: Locking for video update
+  * Added: Don't break on not resolving www.rieter.net
+  * Fixed: No more frenzy internet lookups: onUpDown now only starts after last onUp in 500ms
+  * Changed: uriOpener now has private variables for methodes to prevent multithread  problems
+  * Added: New backgrounds for RTL, SBS and Talpa
+  * Added: ConvertURLEntity and ConvertHTMLEntity in common.py (replacing StripHTML)
+  * Added: maxXotVerison to channels. If XOT updates older channels may lead to conflicts, so they won't be loaded then.
+  * Added: TV-Link.co.uk support (needs more file type detection)
+  * Fixed: Changing list position while loading first item would lead to wrongly display item info on the newly selected one.
+  * Added: Default compare value in progwindow channel comparison
+  * Added: UriOpener.Header now also returns the real url after redirection
+
 ==Changelog v2.7.0b3 2007-07-28 (Requires at least XBMC R8683)==
 
   * Added: Code.google.com page: http://code.google.com/p/xot-uzg/
