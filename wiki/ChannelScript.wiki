@@ -67,3 +67,18 @@ Let's look at some parts:
 The inheritance named under part 4 makes the XOT work with very little coding. The channel only needs the barely necessary methodes to function. All other methodes will be inherited from the `chn_class.py`.
 
 = Channel Script Methodes =
+
+These are the main methodes that are available to you in the chn_name.py:
+{{{
+def InitialiseVariables(self):
+def onActionFromContextMenu(self):
+def ParseMainList(self):
+def CreateEpisodeItem(self, resultSet):
+def PreProcessFolderList(self, data):
+def CreateFolderItem(self, resultSet):
+def CreateVideoItem(self, resultSet):
+def UpdateVideoItem(self, item):
+def LogOn(self, *args):
+}}}
+
+to be continued
