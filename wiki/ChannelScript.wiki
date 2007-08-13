@@ -2,4 +2,19 @@
 
 = Introduction =
 
-To Be Continued.....
+A channel consists of a number of files in a folder. That folder must reside in the Channels folder of the XOT Script. This is an example of the layout:
+
+{{{
++ Channels
+  |    |
+  |    + Channel1
+  |    |    + chn_channel1.py
+  |    |    + channel1icon.png
+  |    |    + channel1largeicon.png
+  |    |    + channel1background.png
+  |    |    + channel1background16x9.png
+}}}
+
+*Please notice the channelname (Channel1) and the channelscript filename (chn_channel1.py)*. This is no coincidence! If the folder is named <Channel> the channelscript should be called chn_<Channel>.py!
+
+The channel is completely managed from the chn_<channel>.py (from now on I will call it chn_name.py). 
