@@ -18,3 +18,52 @@ A channel consists of a number of files in a folder. That folder must reside in 
 *Please notice the channelname (Channel1) and the channelscript filename (chn_channel1.py)*. This is no coincidence! If the folder is named <Channel> the channelscript should be called chn_<Channel>.py!
 
 The channel is completely managed from the chn_<channel>.py (from now on I will call it chn_name.py). 
+
+= Channel Script =
+
+Let's first have a quick look into the first lines of a chn_name.py:
+
+{{{
+#===============================================================================
+# Import the default modules
+#===============================================================================
+from cgi import log
+import xbmc, xbmcgui 
+import sys, os
+#===============================================================================
+# Make global object available
+#===============================================================================
+import common
+import config
+import controls
+import contextmenu
+import chn_class
+
+logFile = sys.modules['__main__'].globalLogFile
+uriHandler = sys.modules['__main__'].globalUriHandler
+
+#===============================================================================
+# register the channels
+#===============================================================================
+register = sys.modules['progwindow']
+register.channelRegister.append('chn_name.Channel("xot-channelwindow.xml", config.rootDir, config.skinFolder, channelCode="channelName")')
+
+#===============================================================================
+# main Channel Class
+#===============================================================================
+class Channel(chn_class.Channel):
+    #===============================================================================
+    # define class variables
+    #===============================================================================
+    def InitialiseVariables(self):
+}}}
+Let's look at some parts:
+
+  # The first part (_Import the default modules_) is of no interest to us, it is just needed for the working of the script. *Don't edit this part!*
+  # The second part (_Make global object available_) is essential to the chn_name.py, but not to the user. This part just contains some imports of XOT modules and a mapping to the logFile and uriHandler. *Don't edit this part!*
+  # Then there is the third part: _register the channels_. Now this part is very essential and you can, no you MUST, *edit* it!. Ut contains the registration of the channel within the XOT Framework! The `register = sys.modules['progwindow']` should always remain, but the second line can be edited. It should look like this: `register.channelRegister.append('chn_name.Channel("xot-channelwindow.xml", config.rootDir, config.skinFolder, channelCode="channelName")')` where `chn_name` is the name of the channelscript file, `xot-channelwindow.xml` the WindowXML file to use with this channel, the `config.rootDir, config.skinFolder` should not be changed and the last part, `channelCode="channelName"` can be used to name your channel (mostly for coding).
+  # The fouth part: _main Channel Class_ is the main channelClass that holds all your code. As you can see (asuming some Python knowledge), it inherits from the `chn_class.Channel`, hence the import `import chn_class`. 
+
+The inheritance named under part 4 makes the XOT work with very little coding. The channel only needs the barely necessary methodes to function. All other methodes will be inherited from the `chn_class.py`.
+
+= Channel Script Methodes =
