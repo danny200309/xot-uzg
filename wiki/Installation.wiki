@@ -3,7 +3,7 @@
 = Installation =
 
 == Requirements ==
-XOT Uzg needs at least a R8683 buid of XBMC and a version of the Python Image Library (PIL) on your XBox.
+XOT Uzg needs at least a R8683 build of XBMC and a version of the Python Image Library (PIL) on your XBox.
 
 == Installing ==
 
