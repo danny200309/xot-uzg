@@ -81,6 +81,13 @@ def UpdateVideoItem(self, item):
 def LogOn(self, *args):
 }}}
 
+Let's walk through a normal episode lookup in an XOT script to see how each methode is used:
+  # We start the XOT Script
+  # Channels are registered as was discussed in the previous section
+  # We select a channel from the channel list
+
+to be continued
+
 Each of these functions are discussed below:
 
 == def InitialiseVariables(self) ==
@@ -146,7 +153,6 @@ def InitialiseVariables(self):
 
 
 to be continued
-
 
 
 
