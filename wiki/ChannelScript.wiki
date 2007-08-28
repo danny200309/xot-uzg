@@ -84,11 +84,71 @@ def LogOn(self, *args):
 Each of these functions are discussed below:
 
 == def InitialiseVariables(self) ==
-This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables:
+This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables. Below you see a typical IntialiseVariables section. The table under the example explains the different variables.
 
-|| *Variable* || *Description* || *Required* ||
+{{{
+#===============================================================================
+# define class variables
+#===============================================================================
+def InitialiseVariables(self):
+    """
+    Used for the initialisation of user defined parameters. All should be 
+    present, but can be adjusted
+    """
+    # call base function first to ensure all variables are there
+    chn_class.Channel.InitialiseVariables(self)
+        
+    self.contextMenuEnabled = False
+    self.icon = ""
+    self.iconLarge = ""
+    self.noImage = ""
+    self.backgroundImage = ""  # if not specified, the one defined in the skin is used
+    self.backgroundImage16x9 = ""  # if not specified, the one defined in the skin is used
+    self.channelName = "Channel Class"
+    self.moduleName = "chn_class.py"
+    self.maxXotVersion = "1.0.0"
+    self.sortOrder = 255 #max 255 channels
+    self.buttonID = 0
+        
+    self.initialUri = ""
+    self.baseUrl = ""
+    self.playerUrl = ""
+        
+    self.passWord = ""
+    self.userName = ""
+    self.logonUrl = ""
+    self.requiresLogon = False
+        
+    self.episodeItemRegex = '' # used for the ParseMainList
+    self.episodeSort = True
+    self.videoItemRegex = ''   # used for the CreateVideoItem 
+    self.folderItemRegex = ''  # used for the CreateFolderItem
+    self.mediaUrlRegex = ''    # used for the UpdateVideoItem
+        
+    #========================================================================== 
+    # non standard items
+        
+    return True
+}}}
 
+|| *Variable* || *Description* || *Required* || *Values* || *Default* ||
+|| self.contextMenuEnabled || Should a contextmenu be available? || True/False || No || False||
+|| self.icon || ChannelIcon Filename || Yes || "Filename.png" || ""|| 
+|| self.iconLarge || LargeChannelIcon Filename || Yes || "FileNameLarge.png" || "" ||
+|| self.noImage || Image shown on Episode window when no episode is selected. || No || "Filename.png || "" ||
+|| self.backgroundImage || Background image for 4x3 Aspect Ratio. || No || "Filename.png" || Default Skin Background ||
+|| self.backgroundImage16x9 || Background image for 16x9 Aspect Ratio. || No || "Filename.png" || Default Skin Background ||
+|| self.channelName || Name of the channel || Yes || "ChannelName" || "" ||
+|| self.moduleName || Filename of the module || Yes || "chn_name1.py" || "" ||
+|| self.maxXotVersion || Maximum version of the XOT framework for which this channel will work. If the XOT Framework version is higher than self.maxXotVersion the channel will not be loaded. || Yes || x.x.x || 0.0.0 ||
+|| self.sortOrder || Sort Order in main channel window. || No || 0-255 || 255 ||    
+|| self.buttonID || Button ID if the channel should be linked with a button. *CAUTION* Either all channels should have buttons or none. See the [Button Wiki Buttons] Page. || No || 0-255 || 0 ||
 
 
 to be continued
+
+
+
+
+
 
