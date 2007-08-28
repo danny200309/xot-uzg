@@ -81,4 +81,14 @@ def UpdateVideoItem(self, item):
 def LogOn(self, *args):
 }}}
 
+Each of these functions are discussed below:
+
+== def InitialiseVariables(self) ==
+This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables:
+
+|| *Variable* || *Description* || *Required* ||
+
+
+
 to be continued
+
