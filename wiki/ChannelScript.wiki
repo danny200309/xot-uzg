@@ -87,17 +87,21 @@ Let's walk through a normal episode lookup in an XOT script to see how each meth
   # The channels are each initialised and the InitialiseVariables methode is called for each channel.
   # The _Programm Window_ is displayed.
   # Here we select a channel from the channel list
-  # Now the ParseMainList Methode is used to retrieve the main list of TV Programs
-  # ParseMainList will open the _self.initialUrl_ and start parsing it using the _self.episodeItemRegex_ Regular Expression.
+  # Now the _ParseMainList_ Methode is used to retrieve the main list of TV Programs
+  # ParseMainList will open the _self.mainListUrl_ and start parsing it using the _self.episodeItemRegex_ Regular Expression.
   # The returned results will then each be passed on to the _CreateEpisodeItem_ methode, which will convert it to a real ListItem and return it. 
   # The listItems are kept in a list which is then displayed on the _Program Window_
   # Now we select a program
-  # This selection triggers the _Channel Window_ to popup for that specific channel and the URL for the selected program is passed on to the ChannelWindow. 
-  # In order to fill the _Channel Window_ with episodes for the programm the 
+  # This selection triggers the _Channel Window_ to popup for that specific channel and the URL for the selected program is passed on to the ChannelWindow.
+  # In order to fill the _Channel Window_ with episodes for the programm the url will be opened. The RAW HTML/XML data will then be passed into the _PreProcessFolderList_ methode which allows pre-processing. This could be used to retrieve common data (e.g. Category name) that cannot be retrieved from each episode item itself. The methode returns the RAW (or changed) data and a list of Pre-Process item.
+  # That data is then parsed using the _self.folderItemRegex_ and _self.videoItemRegex_ regular expression. 
+  # Each resulting match will then be converted to either a FolderItem or an VideoItem using the _CreateFolderItem_ and _CreateVideoItem_ methode.
+  # The resulting list of Folder and Videos is then displayed in the EpisodeList.
+Now 2 things can happen:
+  # When we select a folder from the list, the corresponding URL (which is stored in the listitem) will then be fed into the _PreProcessFolderList_ method and will continue on just like the example above.
+  # When we select or focus an video item, XOT will check if the item is complete. That is, if all information is available. If not, then the UpdateVideoItem will be used the retrieve the missing data. E.g.1: It could be that the MediaUrl (obtained by the _self.mediaUrlRegex_) can not be obtained immediately, but we need to open an extra url to get it. Now we don't want to open each items URL to retrieve the correspodning MediaUrl. Therefore we only do this when the item is focussed or selected. E.g.2: same goes for Episode summaries. It could be that they need to be retrieved from a different URL. So that will only be done when the item is focussed or selected. When all information is availabe, but above all the MediaUrl, the episode playback will start.
 
-to be continued
-
-Each of these functions are discussed below:
+Now that you know how things basically go, let's look into each of these important methodes:
 
 == def InitialiseVariables(self) ==
 This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables. Below you see a typical IntialiseVariables section. The table under the example explains the different variables.
@@ -126,7 +130,7 @@ def InitialiseVariables(self):
     self.sortOrder = 255 #max 255 channels
     self.buttonID = 0
         
-    self.initialUri = ""
+    self.mainListUri = ""
     self.baseUrl = ""
     self.playerUrl = ""
         
@@ -159,7 +163,7 @@ def InitialiseVariables(self):
 || self.maxXotVersion || Maximum version of the XOT framework for which this channel will work. If the XOT Framework version is higher than self.maxXotVersion the channel will not be loaded. || Yes || x.x.x || 0.0.0 ||
 || self.sortOrder || Sort Order in main channel window. || No || 0-255 || 255 ||    
 || self.buttonID || Button ID if the channel should be linked with a button. *CAUTION* Either all channels should have buttons or none. See the [Button Wiki Buttons] Page. || No || 0-255 || 0 ||
-|| self.initialUri || The initial URL that is used to parse the mainlist of programms || Yes || URL || "" ||
+|| self.mainListUri || The initial URL that is used to parse the mainlist of programms || Yes || URL || "" ||
 || self.baseUrl || Could be used to simplify the building of URL's instead of typing the complete URL. || No || URL || "" ||
 || self.playerUrl || Could be used to simplify the building of URL's for playback instead of typing the complete URL. || No || URL || "" ||
 ||  self.requiresLogon || Whether or not a logon is required. See the Logon Methode. || Ye s || True/False || False ||
