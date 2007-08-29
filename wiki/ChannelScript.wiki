@@ -98,8 +98,8 @@ Let's walk through a normal episode lookup in an XOT script to see how each meth
   # Each resulting match will then be converted to either a FolderItem or an VideoItem using the_ CreateFolderItem _and_ CreateVideoItem _methode.
   # The resulting list of Folder and Videos is then displayed in the EpisodeList.
 Now 2 things can happen:
-  # When we select a folder from the list, the corresponding URL (which is stored in the listitem) will then be fed into the_ PreProcessFolderList _method and will continue on just like the example above.
-  # When we select or focus an video item, XOT will check if the item is complete. That is, if all information is available. If not, then the UpdateVideoItem will be used the retrieve the missing data. E.g.1: It could be that the MediaUrl (obtained by the _self.mediaUrlRegex_) can not be obtained immediately, but we need to open an extra url to get it. Now we don't want to open each items URL to retrieve the correspodning MediaUrl. Therefore we only do this when the item is focussed or selected. E.g.2: same goes for Episode summaries. It could be that they need to be retrieved from a different URL. So that will only be done when the item is focussed or selected. When all information is availabe, but above all the MediaUrl, the episode playback will start.
+  # When we select a folder from the list, the corresponding URL (which is stored in the listitem) will be fed into the_ PreProcessFolderList _method and will continue on just like the example above.
+  # When we select or focus an video item, XOT will check if the item is complete. That is, if all information is available. If not, then the UpdateVideoItem will be used the retrieve the missing data. E.g.1: It could be that the MediaUrl (obtained by the _self.mediaUrlRegex_) can not be obtained immediately, but we need to open an extra url to get it. Now we don't want to open each item's URL to retrieve the corresponding MediaUrl. Therefor we only do this when the item is focussed or selected. E.g.2: same goes for Episode summaries. It could be that they need to be retrieved from a different URL. So that will only be done when the item is focussed or selected. When all information is availabe, but above all the MediaUrl, the episode playback will start.
 
 Now that you know how things basically go, let's look into each of these important methodes:
 
@@ -178,7 +178,6 @@ def InitialiseVariables(self):
 
 
 to be continued
-
 
 
 
