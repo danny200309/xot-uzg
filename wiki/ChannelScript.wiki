@@ -84,7 +84,16 @@ def LogOn(self, *args):
 Let's walk through a normal episode lookup in an XOT script to see how each methode is used:
   # We start the XOT Script
   # Channels are registered as was discussed in the previous section
-  # We select a channel from the channel list
+  # The channels are each initialised and the InitialiseVariables methode is called for each channel.
+  # The _Programm Window_ is displayed.
+  # Here we select a channel from the channel list
+  # Now the ParseMainList Methode is used to retrieve the main list of TV Programs
+  # ParseMainList will open the _self.initialUrl_ and start parsing it using the _self.episodeItemRegex_ Regular Expression.
+  # The returned results will then each be passed on to the _CreateEpisodeItem_ methode, which will convert it to a real ListItem and return it. 
+  # The listItems are kept in a list which is then displayed on the _Program Window_
+  # Now we select a program
+  # This selection triggers the _Channel Window_ to popup for that specific channel and the URL for the selected program is passed on to the ChannelWindow. 
+  # In order to fill the _Channel Window_ with episodes for the programm the 
 
 to be continued
 
