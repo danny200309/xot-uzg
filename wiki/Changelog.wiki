@@ -2,7 +2,7 @@
 #labels Featured
 = Changelog =
  
-== hangelog v2.7.0b5 - 2007-09-01 (Needs at least XBMC revision R8683) ==
+== Changelog v2.7.0b5 - 2007-09-01 (Needs at least XBMC revision R8683) ==
   * Changed: no onupdown for TVLink until the issues are fixed. Now update via contextmenu
   * Added: onUpDownEnabled to Channel settings and onUpDown(ignoreDisabled=True/False)
   * Added: Controlgroup for onUpDown to controls.py
