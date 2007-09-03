@@ -102,9 +102,11 @@ Now 2 things can happen:
   # When we select a folder from the list, the corresponding URL (which is stored in the listitem) will be fed into the_ PreProcessFolderList _method and will continue on just like the example above.
   # When we select or focus an video item, XOT will check if the item is complete. That is, if all information is available. If not, then the UpdateVideoItem will be used the retrieve the missing data. E.g.1: It could be that the MediaUrl (obtained by the _self.mediaUrlRegex_) can not be obtained immediately, but we need to open an extra url to get it. Now we don't want to open each item's URL to retrieve the corresponding MediaUrl. Therefor we only do this when the item is focussed or selected. E.g.2: same goes for Episode summaries. It could be that they need to be retrieved from a different URL. So that will only be done when the item is focussed or selected. When all information is availabe, but above all the MediaUrl, the episode playback will start.
 
-Now that you know how things basically go, let's look into each of these important methodes:
+Now that you know how things basically go, let's look into each of these important methodes in a chronological order:
 
 == def InitialiseVariables(self) ==
+_returns nothing_
+
 This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables. Below you see a typical IntialiseVariables section. The table under the example explains the different variables. Notice the `chn_class.Channel.InitialiseVariables(self)` call in the first line of code. This calls the IntialiseVariables of the main Channel class and thus initializes all the variables with their default values.
 
 {{{
@@ -182,8 +184,19 @@ def InitialiseVariables(self):
 || self.folderItemRegex || Regular Expression used for the parsing of Folder Items || Yes || _Valid Regex_ || "" ||
 || self.mediaUrlRegex || Regular Expression used for the parsing of MediaUrl's of Video Items || Yes || _Valid Regex_ || "" ||
 
+All these parameters are used throughout the complete script. So they need to be correct and complete. Now let's go to the next step.
+
+== def ParseMainList(self) == 
+_returns a list of CListItems (in the common.py) to the progwindow.py. The list holds all the programs found in the channel._
+
+In the most simple case, you won't even need to redefine this function. The base ParseMainList from the chn_class.py parses the_ self.mainListUri _using the _episodeItemRegex_ regular expression (although the name would expect it to parse episodes!). For each match the_ self.CreateEpisodeItem _methode is called which converts the result in a correct CListItem. Eventually, after each match has been processed by the_ self.CreateEpisodeItem, _the complete list is sorted and returned to the_ progwindow.py. _    
+
+In a more complex situation, you might need to redefine the ParseMainList method. You don't even have to use the regular expression. The only import thing is that it returns a list of CListItems filled with the programs in the selected channel.
 
 to be continued
+
+
+
 
 
 
