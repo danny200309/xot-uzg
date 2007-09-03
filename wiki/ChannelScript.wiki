@@ -153,24 +153,29 @@ def InitialiseVariables(self):
 }}}
 
 || *Variable* || *Description* || *Required* || *Values* || *Default* ||
+|| *UI Related* || || || || ||
 || self.contextMenuEnabled || Should a contextmenu be available? || True/False || No || False||
 || self.icon || ChannelIcon Filename || Yes || "Filename.png" || ""|| 
 || self.iconLarge || LargeChannelIcon Filename || Yes || "FileNameLarge.png" || "" ||
 || self.noImage || Image shown on Episode window when no episode is selected. || No || "Filename.png || "" ||
 || self.backgroundImage || Background image for 4x3 Aspect Ratio. || No || "Filename.png" || Default Skin Background ||
 || self.backgroundImage16x9 || Background image for 16x9 Aspect Ratio. || No || "Filename.png" || Default Skin Background ||
+|| *Code Related* || || || || ||
 || self.channelName || Name of the channel || Yes || "ChannelName" || "" ||
 || self.moduleName || Filename of the module || Yes || "chn_name1.py" || "" ||
 || self.maxXotVersion || Maximum version of the XOT framework for which this channel will work. If the XOT Framework version is higher than self.maxXotVersion the channel will not be loaded. || Yes || x.x.x || 0.0.0 ||
 || self.sortOrder || Sort Order in main channel window. || No || 0-255 || 255 ||    
 || self.buttonID || Button ID if the channel should be linked with a button. *CAUTION* Either all channels should have buttons or none. See the [Button Wiki Buttons] Page. || No || 0-255 || 0 ||
+|| *Url Related* || || || || ||
 || self.mainListUri || The initial URL that is used to parse the mainlist of programms || Yes || URL || "" ||
 || self.baseUrl || Could be used to simplify the building of URL's instead of typing the complete URL. || No || URL || "" ||
 || self.playerUrl || Could be used to simplify the building of URL's for playback instead of typing the complete URL. || No || URL || "" ||
+|| *Logon Related* || || || || ||
 ||  self.requiresLogon || Whether or not a logon is required. See the Logon Methode. || Ye s || True/False || False ||
 || self.passWord || Password for the Logon (required if self.requiresLogon = True) || No* || "password" || "" ||
 || self.userName || Username for the Logon (required if self.requiresLogon = True) || No* || "username" || "" ||
 || self.logonUrl || Url for the logon (required if self.requiresLogon = True) || No* || URL || "" ||
+|| *Parsing Related* || || || || ||
 || self.episodeSort || Whether or not to sort the _video_ (not folder) items by name || Yes || True/False || True ||
 || self.episodeItemRegex || Regular Expression used for the parsing of MainList Items || Yes || _Valid Regex_ || "" ||
 || self.videoItemRegex || Regular Expression used for the parsing of Video Items || Yes || _Valid Regex_ || "" ||
@@ -179,6 +184,7 @@ def InitialiseVariables(self):
 
 
 to be continued
+
 
 
 
