@@ -105,7 +105,7 @@ Now 2 things can happen:
 Now that you know how things basically go, let's look into each of these important methodes:
 
 == def InitialiseVariables(self) ==
-This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables. Below you see a typical IntialiseVariables section. The table under the example explains the different variables.
+This methode defines, as it names already indicates, the initial variables. It should be present in each script and contains some very important variables. Below you see a typical IntialiseVariables section. The table under the example explains the different variables. Notice the `chn_class.Channel.InitialiseVariables(self)` call in the first line of code. This calls the IntialiseVariables of the main Channel class and thus initializes all the variables with their default values.
 
 {{{
 #===============================================================================
@@ -179,7 +179,6 @@ def InitialiseVariables(self):
 
 
 to be continued
-
 
 
 
