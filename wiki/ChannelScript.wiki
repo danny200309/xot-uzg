@@ -172,10 +172,10 @@ def InitialiseVariables(self):
 || self.playerUrl || Could be used to simplify the building of URL's for playback instead of typing the complete URL. || No || URL || "" ||
 || *Logon Related* || || || || ||
 ||  self.requiresLogon || Whether or not a logon is required. See the Logon Methode. || Ye s || True/False || False ||
-|| self.passWord || Password for the Logon (required if self.requiresLogon = True) || No* || "password" || "" ||
-|| self.userName || Username for the Logon (required if self.requiresLogon = True) || No* || "username" || "" ||
-|| self.logonUrl || Url for the logon (required if self.requiresLogon = True) || No* || URL || "" ||
-|| _Parsing Related_ || || || || ||
+|| self.passWord || Password for the Logon (required if self.requiresLogon = True) || No || "password" || "" ||
+|| self.userName || Username for the Logon (required if self.requiresLogon = True) || No || "username" || "" ||
+|| self.logonUrl || Url for the logon (required if self.requiresLogon = True) || No || URL || "" ||
+|| *Parsing Related* || || || || ||
 || self.episodeSort || Whether or not to sort the _video_ (not folder) items by name || Yes || True/False || True ||
 || self.episodeItemRegex || Regular Expression used for the parsing of MainList Items || Yes || _Valid Regex_ || "" ||
 || self.videoItemRegex || Regular Expression used for the parsing of Video Items || Yes || _Valid Regex_ || "" ||
