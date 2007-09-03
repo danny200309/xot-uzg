@@ -8,7 +8,7 @@ A channel consists of a number of files in a folder. That folder must reside in 
 {{{
 + Channels
   |    |
-  |    + Channel1
+  |    + channel1
   |    |    + chn_channel1.py
   |    |    + channel1icon.png
   |    |    + channel1largeicon.png
@@ -16,9 +16,9 @@ A channel consists of a number of files in a folder. That folder must reside in 
   |    |    + channel1background16x9.png
 }}}
 
-*Please notice the channelname (Channel1) and the channelscript filename (chn_channel1.py)*. This is no coincidence! If the folder is named <Channel> the channelscript should be called chn_<Channel>.py!
+*Please notice the channelname (channel1) and the channelscript filename (chn_channel1.py)*. This is no coincidence! If the folder is named <channel> the channelscript should be called <chn_channel>.py!
 
-The channel is completely managed from the chn_<channel>.py (from now on I will call it chn_name.py). 
+The channel is completely managed from the <chn_channel>.py (from now on I will call it chn_name.py). 
 
 = Channel Script =
 
@@ -179,6 +179,8 @@ def InitialiseVariables(self):
 
 
 to be continued
+
+
 
 
 
