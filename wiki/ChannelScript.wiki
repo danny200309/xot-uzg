@@ -189,12 +189,11 @@ All these parameters are used throughout the complete script. So they need to be
 == def ParseMainList(self) == 
 _returns a list of CListItems (in the common.py) to the progwindow.py. The list holds all the programs found in the channel._
 
-In the most simple case, you won't even need to redefine this function. The base ParseMainList from the chn_class.py parses the_ self.mainListUri _using the _episodeItemRegex_ regular expression (although the name would expect it to parse episodes!). For each match the_ self.CreateEpisodeItem _methode is called which converts the result in a correct CListItem. Eventually, after each match has been processed by the_ self.CreateEpisodeItem, _the complete list is sorted and returned to the_ progwindow.py. _    
+In the most simple case, you don't even need to redefine this function. The base ParseMainList from the chn_class.py parses the_ self.mainListUri _using the _episodeItemRegex_ regular expression (although the name would expect it to parse episodes!). For each match the_ self.CreateEpisodeItem _methode is called which converts the result in a correct CListItem. Eventually, after each match has been processed by the_ self.CreateEpisodeItem, _the complete list is sorted and returned to the_ progwindow.py. _     In the simple case, the definition of the _episodeItemRegex_ alone should be sufficient.
 
 In a more complex situation, you might need to redefine the ParseMainList method. You don't even have to use the regular expression. The only import thing is that it returns a list of CListItems filled with the programs in the selected channel.
 
 to be continued
-
 
 
 
