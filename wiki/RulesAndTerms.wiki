@@ -11,7 +11,7 @@ As more and more people are starting to make channels for the XOT Framework, we 
   # If you want us to host your channel, feel free to mail it to us. We will however screen the channel before hosting it. We, and alone we, decide what channels to host on this site.
   # Make as many channels as you want.
   # Make them in any language you want.
-  # But please stick to the chn_class.py inheritance. So DON'T modify that file, but make the channel work with the most recent version of chn_class.py. If you do, we cannot guarantee that your channel will work with future version of the XOT Framework. So stick with the [ChannelScript Channel Script Tutorial].
+  # But please stick to the chn_class.py inheritance. So DON'T modify that file, but make the channel work with the most recent version of chn_class.py. If you don't, we cannot guarantee that your channel will work with future version of the XOT Framework. So stick with the [ChannelScript Channel Script Tutorial].
   
 == History ==
 _04 september 2007_: Created this document.
