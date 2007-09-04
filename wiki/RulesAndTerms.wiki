@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Rules and Terms of use for the XOT Framework
 #labels Featured
 
 = Rules & Terms =
