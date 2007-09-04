@@ -3,7 +3,7 @@
 
 = Rules & Terms =
 
-As more and more people are starting to make channels for the XOT Framework, I want to lay out some rules and terms for the channels that I will host on this site. Please stick to them before asking me to post them on the site:
+As more and more people are starting to make channels for the XOT Framework, we want to lay out some rules and terms for the channels that we will host on this site. Please stick to them before asking us to post or link to them on the site:
 
   # We, the XOT Framework team, are not responsible for any content that is displayed using the XOT Framwork. 
   # We, the XOT Framework team, can not prevent others of distributing their own channels that work with the XOT Framework.
