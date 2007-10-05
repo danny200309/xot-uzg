@@ -1,6 +1,17 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+
+== Changelog v2.7.0b6 - 2007-10-05 (Needs at least XBMC revision R8683) ==
+  * Fixed: RTL script updated for GTST (ParseMainList adds an extra item: GTST)
+  * Fixed: RTL script updated. The XML layout changed a bit. 
+  * Added: an user agent to the uriopener (thanks to VincePirez @ xbmc forums)
+  * Fixed: SBS Regex
+  * Added: Date for programs in progwindow
+  * Added: Option to disable sorting alphabetically and sort by date
+  * Fixed: layout of Kanalenkiezer.nl changed. Had to adjust the regular expressions and urls.
+  * Changed: no URL fetching on item selection. Only on click! (Done using the self.onUpDownEnabled = False).
+  * Added: when self.onUpDownEnabled = False and ignore = False then only the data is shown and no update is done of the videoitem.
  
 == Changelog v2.7.0b5 - 2007-09-01 (Needs at least XBMC revision R8683) ==
   * Changed: no onupdown for TVLink until the issues are fixed. Now update via contextmenu
