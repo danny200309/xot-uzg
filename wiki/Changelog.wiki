@@ -2,6 +2,18 @@
 #labels Featured
 = Changelog =
 
+== Changelog v2.7.0 - 2007-10-12 ****Needs at least XBMC revision R8683**** ==
+  * Added: Cachefolder cleanup
+  * Added: New GTST episodes to RTL channel
+  * Added: Channelnames in Programwindow
+  * Added: Channeldescriptions in Programwindow
+  * Added: Channeldescriptions to all channels
+  * Added: item=complete checkmark
+  * Fixed: RTL Error in Regex due to changes in XML layout
+  * Changed: renamed self.onUpDownEnabled to self.onUpDownUpdateEnabled for better displaying its function
+  * Added: Lama's channel
+  * Added: self.CacheThumb to chn_class.py to automate the caching of thumbs
+
 == Changelog v2.7.0b6 - 2007-10-05 (Needs at least XBMC revision R8683) ==
   * Fixed: RTL script updated for GTST (ParseMainList adds an extra item: GTST)
   * Fixed: RTL script updated. The XML layout changed a bit. 
