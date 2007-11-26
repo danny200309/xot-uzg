@@ -2,6 +2,20 @@
 #labels Featured
 = Changelog =
 
+== Changelog v3.0.0a1 - 2007-11-26 ****Needs at least XBMC revision R10008 **** ==
+  * Added: Caching of items. On 'back' items are retrieved from the cache! This reduces the URL lookups dramatically
+  * Added: self.pluginMode, if in plugin-mode, this variable is True
+  * Added: initPlugin method to Channel. This one can be used to do the initialisation of a channel. Remember to add the self.pluginMode = True to this part.
+  * Added: item.Downloadable indicates whether an item is downloadable. Should be used in the future to determine if it can be downloaded or not.
+  * Added: Plugin support (dates still missing in listing)
+  * Added: Dumpert.nl channel
+  * Changed: had to remove some UI related stuff from the channels, to make sure they would work as a plugin.
+  * Changed: channels may NOT contain any reference to objects of the XOT-Script UI. If they do, make sure to not adres them when in script mode.
+  * Fixed: Joox.net channel
+  * Added: if mediaurl is not filled in updatevideo, the item is always marked als not complete
+  * Fixed: date is now grey when item is not selected in progwindow
+  * Changed: mplayer and dvdplayer can now be selected explicitly. Defaults to the default XBMC player.
+
 == Changelog v2.7.0 - 2007-10-12 ****Needs at least XBMC revision R8683**** ==
   * Added: Cachefolder cleanup
   * Added: New GTST episodes to RTL channel
