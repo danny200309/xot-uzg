@@ -2,6 +2,15 @@
 #labels Featured
 = Changelog =
 
+
+== Changelog v3.0.0b1 - 2007-12-23 ****Needs at least XBMC revision R10008 ****==
+  * Fixed: Kanalenkiezer.nl is now working again
+  * Changed: Dumpert.nl icons renamed
+  * Changed: 'De Lama's' Channel changed to not retrieve 1000 items, but only 500. This should solve timeouts opening the channel.
+  * Fixed: Text not appearing in textboxes
+  * Added: Better handling of xbmcplugin interface.
+  * Changed: Fixed some overlaps in skins.
+
 == Changelog v3.0.0a1 - 2007-11-26 ****Needs at least XBMC revision R10008 **** ==
   * Added: Caching of items. On 'back' items are retrieved from the cache! This reduces the URL lookups dramatically
   * Added: self.pluginMode, if in plugin-mode, this variable is True
