@@ -2,6 +2,17 @@
 #labels Featured
 = Changelog =
 
+== Changelog v3.0.0b2 - 2008-01-07 ****Needs at least XBMC revision R10008 ****==
+  * Fixed: issue with getFocus() for GUI types that are XBMCGUI specific.
+  * Fixed: Minor issue on NOS Page handling
+  * Fixed: Progressbar dissappeared in NOS channel
+  * Added: Favorites can now be every folder in each channel. 
+  * Changed: ContextMenu is moved from Channel to ChannelClass. In the Channel now has a self.contextMenuItems which is a list of ContextMenu.ContextMenuItems. Each item has a label, a callback function and an indication wether it should show on video/folder/completed items.
+  * Added: Favorites
+  * Added: Settings.xml
+  * Added: contextmenu to 123video
+  * Added: 123Videos.nl
+  * Changed: chn_nos - NOS now only retrieves recent items and displays an archive folder with older items
 
 == Changelog v3.0.0b1 - 2007-12-23 ****Needs at least XBMC revision R10008 ****==
   * Fixed: Kanalenkiezer.nl is now working again
