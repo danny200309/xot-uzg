@@ -4,6 +4,14 @@
 
 == Changelog v3.0.0b2 - 2008-01-07 ****Needs at least XBMC revision R10008 ****==
   * Fixed: issue with getFocus() for GUI types that are XBMCGUI specific.
+  * Changed: Item is now first pushed onto the history stack before fetching of new items, so the parent item can be called via the history stack (for descriptions for instance)
+  * Changed: sort-order of Lama's channel
+  * Added: Quicksilverscreen.com channel
+  * Added: Ratings
+  * Changed: Modified the www.uitzendinggemist.nl search channel to a 'specials' channel including search, popular items, newly added items, etc..etc.. 
+
+== Changelog v3.0.0b2 - 2008-01-07 ****Needs at least XBMC revision R10008 ****==
+  * Fixed: issue with getFocus() for GUI types that are XBMCGUI specific.
   * Fixed: Minor issue on NOS Page handling
   * Fixed: Progressbar dissappeared in NOS channel
   * Added: Favorites can now be every folder in each channel. 
