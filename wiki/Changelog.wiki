@@ -2,7 +2,7 @@
 #labels Featured
 = Changelog =
 
-== Changelog v3.0.0b2 - 2008-01-07 ****Needs at least XBMC revision R10008 ****==
+== Changelog v3.0.0 - 2008-01-28 ****Needs at least XBMC revision R10008 ****==
   * Fixed: issue with getFocus() for GUI types that are XBMCGUI specific.
   * Changed: Item is now first pushed onto the history stack before fetching of new items, so the parent item can be called via the history stack (for descriptions for instance)
   * Changed: sort-order of Lama's channel
