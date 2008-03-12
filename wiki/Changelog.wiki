@@ -2,6 +2,29 @@
 #labels Featured
 = Changelog =
 
+== Changelog v3.0.0 - 2008-03-10 ****Needs at least XBMC revision R10008 ****==
+  * Added: more download algorithms
+  * Added: more support for quicksilverscreen.com
+  * Added: people who donated
+  * Fixed: Searchregex www.uitzendinggemist.nl was not correct
+  * Added: Swedish television SVT.se
+  * Added: BeautifulSoup support via common.DoSoupFindAll
+  * Added: chn_class.py now accepts lists/tuples for playback. They will be converted to playlists
+  * Changed: maxVersion to 3.0.1
+  * Added: MyVideos.nl
+  * Added: new pagenavigation images
+  * Added: favorites now go into Database file
+  * Added: sqlite2 library
+  * Changed: context menu now uses onClick and works with mouse
+  * Fixed: Crash on detection of script/plugin from within XBMC for Linux
+  * Fixed: Crash on mouse movement when mouse is not over a control in ProgWindow. 
+  * Fixed: UrlJoin used for url creation in CreatePageItem
+  * Fixed: GuiController check self.PluginMode
+  * Added: Page support in XOT Plugin (they show as folders)
+  * Added: XBMC version and compile date in Directory Printer
+  * Changed: scrolling through pagelist now also allows from top -> bottom jump
+  * Fixed: UZG changed their layout. ParseMainList now parses multiple pages
+
 == Changelog v3.0.0 - 2008-01-28 ****Needs at least XBMC revision R10008 ****==
   * Fixed: issue with getFocus() for GUI types that are XBMCGUI specific.
   * Changed: Item is now first pushed onto the history stack before fetching of new items, so the parent item can be called via the history stack (for descriptions for instance)
