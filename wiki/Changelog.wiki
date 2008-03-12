@@ -2,7 +2,7 @@
 #labels Featured
 = Changelog =
 
-== Changelog v3.0.0 - 2008-03-10 ****Needs at least XBMC revision R10008 ****==
+== Changelog v3.0.1 - 2008-03-10 ****Needs at least XBMC revision R10008 ****==
   * Added: more download algorithms
   * Added: more support for quicksilverscreen.com
   * Added: people who donated
