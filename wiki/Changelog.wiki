@@ -2,6 +2,27 @@
 #labels Featured
 = Changelog =
 
+
+== Changelog v3.1.0 - 2008-05-07 (Needs at least XBMC revision R10008) ==
+  * Added: Auto Channel Updater
+  * Changed: update now has a verbose option to also show a message if no update was available
+  * Fixed: www.uitzendinggemist.nl introduced a SecurityCode to obtain the mediaurl. For now it is fixed by loading an extra page that holds that code.
+  * Fixed: Regex for results in NOS Zoeken fine-tuned
+  * Fixed: Dumpert.nl MediaUrlRegex
+  * Fixed: Pagecontrols where showing for channel description labels
+  * Added: Official SBS6.nl channel. The previous one now has PCZapper in it's name and description
+  * Added: NET5 from www.net5.nl
+  * Added: Veronicatv.nl
+  * Fixed: Cosmetic changes to contextmenu
+  * Added: self.defaultPlayer option to channels
+  * Changed: Prevent addition of duplicate items in Mainlist
+  * Added: more debugging info if an AttributeError occurs after importing libraries. This should give more information on what went wrong.
+  * Fixed: on some XBox systems the timeout of on Open action would occur immediately due to a problem with the threading.join() method. (Thanks to Arnova [tweakers.net])
+  * Fixed: Caching of thumb would not return the default self.NoImage if an exception occured.
+  * Changed: GuiController now ignores exceptions that occur when non essential controls are missing from the skin file (like the channelinfo controls and rating controls).
+  * Fixed: Contextmenu had disappeared in some channels
+  * Fixed: RTL XML Layout changed
+
 == Changelog v3.0.1 - 2008-03-10 ****Needs at least XBMC revision R10008 ****==
   * Added: more download algorithms
   * Added: more support for quicksilverscreen.com
