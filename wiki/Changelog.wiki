@@ -1,7 +1,52 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+== Changelog v3.2.0b2 - 2008-11-24 ****Needs at least XBMC revision R14899 **** ==
+  * Updated: SVT.se
+  * Fixed: mediaUrl error in Plugin
+  * Fixed: Environment always showed Win32 even on xbox. Now it imports win32 but displays XBOX
+  * Fixed: Icon had bad pixels
+  * Changed: entity-converter did not work if entities had capitals
+  * Fixed: Regex for NET5/SBS6 and Veronica (Again)
+  * Added: NOS Top 50
+  * Fixed: RTL now loads the additional programms better
+  * Fixed: Regex for NET5/SBS6 and Veronica
+  * Added: Paging to NET5/SBS6 and Veronica
 
+== Changelog v3.2.0b1 - 2008-09-29 ****Needs at least XBMC revision R14899 **** ==
+  * Added: Official southpark channel
+  * Fixed: RTL Channel adjusted to new RTL Player
+  * Added: new environment detecting
+  * Added: 64bit support
+  * Fixed: NOS Channel adjustments for new url layout (and future use of WMC)
+  * Fixed: Plugin for multiple mediaurls
+
+== Changelog v3.2.0a3 - 2008-09-04 ****Needs at least XBMC revision R14899 **** ==
+  * Fixed: Linux Logging
+  * Fixed: Linux pal -> PAL in skin folder names
+
+== Changelog v3.2.0a2 - 2008-09-02 ****Needs at least XBMC revision R14899 **** ==
+  * Fixed: path issues with Linux. os.path.join is used now everywhere.
+  * Fixed: SBS6nl channel
+  * Fixed: RTL457&8 channel
+  * Added: Environment detection and OS dependend packages (idea taken from AMT)
+
+== Changelog v3.2.0a1 - 2008-08-19 ****Needs at least XBMC revision R14899 **** ==
+  * Fixed: NOS channel needed fixing because of new check on the website.
+  * Fixed: quickfix for unexplainable clearing of channellist
+  * Changed: layout of script folder to support WindowXML rev14899
+  * Fixed: MyVideo regex
+  * Fixed: some more syntax issues
+  * Changed: User Agent for URLLib is now XOT/3.0 (compatible; XBMC; U)
+  * Removed: Unneeded imports
+  * Fixed: RTL changed their layout
+  * Fixed: Regex changed for Kanalenkiezer
+  * Changed: Veronica channel needed multiple fixes (FLV detection)
+  * Changed: Favorites now use ChannelGUID for identification
+  * Added: GUID for each channel used for identification.
+  * Added: bitrate selection of RTL streams
+  * Updated: SVT.se image
+  * Updated: Donations updated in readme.txt
 
 == Changelog v3.1.0 - 2008-05-07 (Needs at least XBMC revision R10008) ==
   * Added: Auto Channel Updater
