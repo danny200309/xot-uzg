@@ -1,6 +1,34 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+== Changelog v3.2.0b4 - 2009-04-28 **** Needs at least XBMC revision R17016 **** ==
+  * Added: TV3.se and TV6.se
+  * Fixed: RTL 4,5,7&8 channel
+  * Removed: PCZapper SBS6
+  * Added: Freecaster.tv
+  * Fixed: SVT.se channel. 
+  * Fixed: 123Video now detects correct mediaserver
+  * Fixed: De Lama's channel
+  * Added: TurboNick
+  * Fixed: MTV.nl Channel
+  * Fixed: Southpark channel (partly)
+  * Fixed: NOS channels
+  * Added: Unicode support (fixed scrambling of special characters)
+  * Added: Minor improvements to UI and added Events
+  * Added: detection of duplicate GUIDs of channels. The duplicate is removed and error is logged
+  * Added: Helpers library
+  * Added: HtmlEntityHelper class. 
+  * Fixed: Default Skin scroll
+  * Renamed: clistItem to MediaItem
+
+== Changelog v3.2.0b3 - 2009-01-23 **** Needs at least XBMC revision R17016 **** ==
+  * Added: MediaStream skin (thanks to Poeier from tweakers.net)
+  * Fixed: RTL channel
+  * Added: better sorting of items (date still needs some tweaking)
+  * Added: Mouseclick support (Requires Rev 17016)
+  * Added: Z@PP Channel
+  * Fixed: SVT Channel
+
 == Changelog v3.2.0b2 - 2008-11-24 ****Needs at least XBMC revision R14899 **** ==
   * Updated: SVT.se
   * Fixed: mediaUrl error in Plugin
