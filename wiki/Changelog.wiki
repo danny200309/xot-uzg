@@ -1,6 +1,14 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+
+== Changelog v3.2.0b5 - 2009-05-07 (Needs at least XBMC rev17016) == 
+ * Added: TV3.se and TV6.se
+ * Fixed: Freecaster.tv
+ * Added: proxy support
+ * Fixed: __eq__ could not handle None objects
+ * Fixed: plugin did not work because of __eq__ bug.
+
 == Changelog v3.2.0b4 - 2009-04-28 **** Needs at least XBMC revision R17016 **** ==
   * Added: TV3.se and TV6.se
   * Fixed: RTL 4,5,7&8 channel
