@@ -1,6 +1,20 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+== Changelog v3.2.0b6 - 2009-11-26 (Needs at least XBMC rev17016)==
+ * Fixed: Fine tuned SVT regex's
+ * Fixed: SVT.se channel could not handle rtmpe (thanks to Stefan Nilsson)
+ * Added: Viasat Sport (thanks to fldc @ XBMC.org)
+ * Added: TV3, TV6 and TV8.se
+ * Fixed: RTL channel more compatible with XBMC Win32/Linux (Thanks to Menno). Still long loading times
+ * Fixed: Freecaster.tv channel
+ * Fixed: Plugin broke with new XBMC version
+ * Fixed: Loging broke with new XBMC version
+ * Fixed: bug with logging of mediaitem
+ * Added: MiniMeedia skin
+ * Changed: Xbox Media Center into XBMC Media Center
+ * Updated: Logo's
+ * Updated: Build Scripts
 
 == Changelog v3.2.0b5 - 2009-05-07 (Needs at least XBMC rev17016) == 
  * Added: TV3.se and TV6.se
