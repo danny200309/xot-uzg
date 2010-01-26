@@ -1,6 +1,16 @@
 #summary Changelog for XOT Uzg
 #labels Featured
 = Changelog =
+==Changelog v3.2.0b7 - 2010-01-26 (Needs at least XBMC revision R17016)==
+ * Removed: Kanalenkiezer for the time being, because they start to link to HTML more and more
+ * Fixed: Turbo Nick RTMP urls
+ * Fixed: Freecaster.tv
+ * Updated: SVT to handel AJAX calls beter (Issue 151)
+ * Added: Confluence Skin
+ * Fixed: added some code to make sure XOT updater does not suffer from a googelcode-page bug
+ * Fixed: Bug with closing of progressbar
+ * Added: Contextmenu Close support
+
 == Changelog v3.2.0b6 - 2009-11-26 (Needs at least XBMC rev17016)==
  * Fixed: Fine tuned SVT regex's
  * Fixed: SVT.se channel could not handle rtmpe (thanks to Stefan Nilsson)
