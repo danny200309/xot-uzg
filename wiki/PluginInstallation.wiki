@@ -1,22 +1,4 @@
 #labels Featured,Installation
 =Install XOT-Uzg as a plugin=
-==Location of the plugins folder==
-This assumes your Windows install drive is C:. Replace as necessary.
-===Windows XP===
- * C:\Documents and Settings\[username]\Application Data\XBMC\plugins\music\
- * C:\Documents and Settings\[username]\Application Data\XBMC\plugins\pictures\
- * C:\Documents and Settings\[username]\Application Data\XBMC\plugins\programs\
- * C:\Documents and Settings\[username]\Application Data\XBMC\plugins\video\
 
-===Windows Vista & Windows 7===
- * C:\Users\[username]\AppData\Roaming\XBMC\plugins\music\
- * C:\Users\[username]\AppData\Roaming\XBMC\plugins\pictures\
- * C:\Users\[username]\AppData\Roaming\XBMCplugins\programs\
- * C:\Users\[username]\AppData\Roaming\XBMC\plugins\video\
-
-===Portable XBMC===
-If you run xbmc in portable mode, use the following directories instead:
- * C:\Program Files\XBMC\plugins\music\
- * C:\Program Files\XBMC\plugins\pictures\
- * C:\Program Files\XBMC\plugins\programs\
- * C:\Program Files\XBMC\plugins\video\
+Please visit [http://www.rieter.net/pages/XOT:Installation Installation] at www.rieter.net
