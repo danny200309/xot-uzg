@@ -3,16 +3,4 @@
 
 = Rules & Terms =
 
-As more and more people are starting to make channels for the XOT Framework, we want to lay out some rules and terms for the channels that we will host on this site. Please stick to them before asking us to post or link to them on the site:
-
-  # We, the XOT Framework team, are not responsible for any content that is displayed using the XOT Framwork. 
-  # We, the XOT Framework team, can not prevent others of distributing their own channels that work with the XOT Framework.
-  # We, the XOT Framework team, do not support any kind of Adult content for the XOT Framework nor will we host it on this Google Code page.
-  # If you want us to host your channel, feel free to mail it to us. We will however screen the channel before hosting it. We, and alone we, decide what channels to host on this site.
-  # Make as many channels as you want.
-  # Make them in any language you want.
-  # But please stick to the chn_class.py inheritance. So DON'T modify that file, but make the channel work with the most recent version of chn_class.py. If you don't, we cannot guarantee that your channel will work with future version of the XOT Framework. So stick with the [ChannelScript Channel Script Tutorial].
-  
-== History ==
-_04 september 2007_: Created this document.
-  
+Please visit [http://www.rieter.net/pages/XOT:Rules_and_Terms Rules and Terms] at www.rieter.net
