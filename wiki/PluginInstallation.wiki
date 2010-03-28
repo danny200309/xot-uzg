@@ -1,4 +1,4 @@
-#labels Featured,Installation
+#labels Installation
 =Install XOT-Uzg as a plugin=
 
 Please visit [http://www.rieter.net/pages/XOT:Installation Installation] at www.rieter.net
