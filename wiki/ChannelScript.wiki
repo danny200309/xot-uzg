@@ -1,5 +1,4 @@
 #summary Creating or Modifying a channel script
-#labels Featured
 
 = Introduction =
 
@@ -194,8 +193,6 @@ In the most simple case, you don't even need to redefine this function. The base
 In a more complex situation, you might need to redefine the ParseMainList method. You don't even have to use the regular expression. The only import thing is that it returns a list of CListItems filled with the programs in the selected channel.
 
 to be continued
-
-
 
 
 
