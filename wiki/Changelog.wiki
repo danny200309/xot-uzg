@@ -1,5 +1,4 @@
 #summary Changelog for XOT Uzg
-#labels Featured
 = Changelog =
 ==Changelog v3.2.0b7 - 2010-01-26 (Needs at least XBMC revision R17016)==
  * Removed: Kanalenkiezer for the time being, because they start to link to HTML more and more
