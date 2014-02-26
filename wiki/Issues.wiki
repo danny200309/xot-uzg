@@ -1,5 +1,5 @@
 #summary XBMC Online TV - Issue Register
 
-= We moved =
+= We are moving our issue tracker =
 
-We are currently moving our issue tracker to BitBucket. 
+We are currently moving our issue tracker to BitBucket. It will be available soon.
